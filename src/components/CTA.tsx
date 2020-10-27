@@ -42,7 +42,7 @@ export const CTA = () => (
     <ChakraLink
       isExternal
       href="mailto:josephampadu549@gmail.com"
-      flexGrow={3}
+      flexGrow={1}
       mx={2}
     >
       <Button width="100%" colorScheme="red">

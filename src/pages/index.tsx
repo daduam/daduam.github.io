@@ -12,7 +12,7 @@ const Index = () => (
     <Hero />
     <Main>
       <Text textAlign="center">
-        I like to write JavaScript web apps with <Code>Node.js</Code> and{" "}
+        I write JavaScript web apps with <Code>Node.js</Code> and{" "}
         <Code>React</Code>.
       </Text>
     </Main>
