@@ -46,7 +46,7 @@ export const CTA = () => (
       mx={2}
     >
       <Button width="100%" colorScheme="red">
-        Contact Me
+        Email
       </Button>
     </ChakraLink>
   </Container>
