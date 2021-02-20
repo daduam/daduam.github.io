@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex, Link as ChakraLink } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 export const Navbar = () => {
@@ -10,15 +10,14 @@ export const Navbar = () => {
       color="brand.lightShade"
       justifyContent="center"
       alignItems="center"
-      fontWeight="bold"
     >
-      <Link mr="2">
-        <NextLink href="/">About</NextLink>
-      </Link>
+      <NextLink href="/" passHref>
+        <ChakraLink mr="2">About</ChakraLink>
+      </NextLink>
       <span>|</span>
-      <Link ml="2">
-        <NextLink href="/work">Portfolio</NextLink>
-      </Link>
+      <NextLink href="/work" passHref>
+        <ChakraLink ml="2">Portfolio</ChakraLink>
+      </NextLink>
     </Flex>
   );
 };
