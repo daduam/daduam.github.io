@@ -15,4 +15,9 @@ deploy:
   local_dir: out
   fqdn: kwadjo.me
   on:
-    branch: main 
+    branch: main
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
