@@ -18,7 +18,9 @@ const Index = () => {
       </Box>
 
       <Box w="container.md" p="8">
-        <Heading fontSize="2xl">Skills</Heading>
+        <Heading fontSize="2xl" as="h1">
+          Skills
+        </Heading>
         <List>
           <ListItem>
             <Badge bg="brand.darkAccent" color="white">

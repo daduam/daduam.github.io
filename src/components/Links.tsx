@@ -5,7 +5,6 @@ import {
   ListItem,
   Link as ChakraLink,
 } from "@chakra-ui/react";
-import React from "react";
 
 type MyLink = {
   name: string;
@@ -40,7 +39,9 @@ const myLinks: Array<MyLink> = [
 export const Links = ({}) => {
   return (
     <Box w="container.md" p="8">
-      <Heading fontSize="2xl">Links</Heading>
+      <Heading fontSize="2xl" as="h1">
+        Links
+      </Heading>
 
       <List>
         {myLinks.map(({ name, url, text, email, ext }) => {
