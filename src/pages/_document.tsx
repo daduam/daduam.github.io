@@ -18,15 +18,12 @@ export default class MyDocument extends Document {
   public render() {
     return (
       <Html lang="en">
-        <Head>
-          <body>
-            <ColorModeScript
-              initialColorMode={theme.config.initialColorMode}
-            />
-            <Main />
-            <NextScript />
-          </body>
-        </Head>
+        <Head />
+        <body>
+          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <Main />
+          <NextScript />
+        </body>
       </Html>
     );
   }
