@@ -44,9 +44,9 @@ export const Links = ({}) => {
       </Heading>
 
       <List>
-        {myLinks.map(({ name, url, text, email, ext }) => {
+        {myLinks.map(({ name, url, text, email, ext }, idx) => {
           return (
-            <ListItem>
+            <ListItem key={`${name}-${idx}`}>
               <strong style={email ? { color: "red" } : undefined}>
                 {name}
               </strong>{" "}
