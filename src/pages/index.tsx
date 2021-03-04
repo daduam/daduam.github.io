@@ -6,7 +6,7 @@ import { Skills } from "../components/Skills";
 
 const Index = () => {
   return (
-    <Layout height="100vh">
+    <Layout>
       <Box w="container.md" p="8">
         <Text>
           <em>Hello</em> 👋🏿, I am <strong>Joseph Ampadu</strong>, computer
