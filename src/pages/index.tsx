@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, Heading } from "@chakra-ui/react";
 
 import { Layout } from "../components/Layout";
 import { Links } from "../components/Links";
@@ -7,14 +7,23 @@ import { Skills } from "../components/Skills";
 const Index = () => {
   return (
     <Layout>
-      <Box w="container.md" p="8">
+      <Box
+        mx="auto"
+        p="4"
+        width={{
+          base: "100%",
+          sm: "75%",
+          md: "50%",
+        }}
+      >
+        <Heading fontSize="xl" as="h1">
+          About me
+        </Heading>
         <Text>
           <em>Hello</em> 👋🏿, I am <strong>Joseph Ampadu</strong>, computer
-          science undergraduate and a <strong>fullstack web developer</strong>
-          . I am <strong>open</strong> to entry level developer roles and{" "}
-          <strong>internships</strong>. I am currently taking a course in{" "}
-          <strong>Data Analysis with Python</strong>, while building cool side
-          projects.
+          science undergraduate and a <strong>fullstack web developer</strong>.
+          I am <strong>open</strong> to entry level developer roles and{" "}
+          <strong>internships</strong>.
         </Text>
       </Box>
 

@@ -2,8 +2,16 @@ import { Box, Heading, ListItem, List, Badge } from "@chakra-ui/react";
 
 export const Skills = () => {
   return (
-    <Box w="container.md" p="8">
-      <Heading fontSize="2xl" as="h1">
+    <Box
+      mx="auto"
+      p="4"
+      width={{
+        base: "100%",
+        sm: "75%",
+        md: "50%",
+      }}
+    >
+      <Heading fontSize="xl" as="h1">
         Skills
       </Heading>
       <List>
@@ -18,8 +26,7 @@ export const Skills = () => {
           <Badge bg="brand.lightAccent">Docker</Badge>
         </ListItem>
         <ListItem>
-          <strong>Languages</strong> - JavaScript/TypeScript, C++, Python,
-          Java
+          <strong>Languages</strong> - JavaScript/TypeScript, C++, Python, Java
         </ListItem>
         <ListItem>
           <strong>Tools</strong> - Linux, Git, Vscode, Vim
