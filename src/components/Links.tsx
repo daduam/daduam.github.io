@@ -32,7 +32,7 @@ const myLinks: Array<MyLink> = [
   {
     name: "Twitter",
     ext: true,
-    url: "https://twitter.com/mpadu_",
+    url: "https://twitter.com/hi0x42",
   },
 ];
 
