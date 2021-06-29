@@ -38,8 +38,16 @@ const myLinks: Array<MyLink> = [
 
 export const Links = ({}) => {
   return (
-    <Box w="container.md" p="8">
-      <Heading fontSize="2xl" as="h1">
+    <Box
+      mx="auto"
+      p="4"
+      width={{
+        base: "100%",
+        sm: "75%",
+        md: "50%",
+      }}
+    >
+      <Heading fontSize="xl" as="h1">
         Links
       </Heading>
 
