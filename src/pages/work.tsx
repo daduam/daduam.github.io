@@ -1,5 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
-
+import { Box, Heading, Text, Link as ChakraLink } from "@chakra-ui/react";
 import { Layout } from "../components/Layout";
 
 const Work = () => {
@@ -17,6 +16,9 @@ const Work = () => {
         <Heading fontSize="xl" as="h1">
           Projects
         </Heading>
+        <Text>
+          Check out what I am working on <ChakraLink color="brand.main" href="https://github.com/daduam">here</ChakraLink>.
+        </Text>
       </Box>
     </Layout>
   );
