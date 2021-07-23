@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[9],{hkpG:function(n,t,o){"use strict";o.r(t);var e=o("q1tI"),s=o.n(e),_=o("soUV"),w=s.a.createElement;t.default=function(){return w(_.a,{height:"100vh"},"projects")}},sIsM:function(n,t,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/work",function(){return o("hkpG")}])}},[["sIsM",1,2,0,3,4]]]);
