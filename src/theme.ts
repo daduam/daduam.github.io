@@ -4,7 +4,7 @@ import { GlobalStyles, mode } from "@chakra-ui/theme-tools";
 const colors = {
   transparent: "transparent",
   black: "#000",
-  white: "#fff",
+  white: "#f2f2f2",
   brand: {
     main: "#384284",
     lightShade: "#e5ebe9",
@@ -15,7 +15,7 @@ const colors = {
 };
 
 const styles = {
-  global: (props: any) => ({
+  global: (props) => ({
     body: {
       color: mode(colors.black, colors.white)(props),
       bgColor: mode(colors.brand.lightShade, colors.brand.darkShade)(props),

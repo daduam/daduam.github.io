@@ -7,9 +7,13 @@ import {
   ListItem,
   Switch,
   Text,
+  useColorMode,
 } from "@chakra-ui/react";
 
 const Index = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode === "dark";
+
   return (
     <Box
       mx="auto"
@@ -20,7 +24,13 @@ const Index = () => {
         md: "50%",
       }}
     >
-      <Switch />
+      <Switch
+        position="fixed"
+        top="1rem"
+        right="1rem"
+        isChecked={isDark}
+        onChange={toggleColorMode}
+      />
 
       <Box mb="4">
         <Text>
@@ -58,50 +68,33 @@ const Index = () => {
         </List>
       </Box>
 
-      <Box my="4">
-        <List>
-          {[
-            {
-              name: "LinkedIn",
-              url: "",
-            },
-            {
-              name: "Email",
-              email: true,
-              url: "mailto:josephampadu549@gmail.com",
-              text: "josephampadu549@gmail.com",
-            },
-          ].map(({ name, url, text, email }, idx) => {
-            return (
-              <ListItem key={`${name}-${idx}`}>
-                <strong style={email ? { color: "red" } : undefined}>
-                  {name}
-                </strong>{" "}
-                -{" "}
-                <ChakraLink color="brand.main" href={url}>
-                  {text || url}
-                </ChakraLink>
-              </ListItem>
-            );
-          })}
-        </List>
-      </Box>
-
       <Box mt="4">
-        <Heading fontSize="lg" as="h1">
-          Projects
-        </Heading>
         <Text>
           Check out what I am working on my{" "}
-          <ChakraLink color="brand.main" href="https://github.com/daduam">
+          <ChakraLink
+            color={colorMode === "light" ? "brand.main" : "brand.lightAccent"}
+            href="https://github.com/daduam"
+          >
             github
           </ChakraLink>
-          .<br />
+          .
+          <br />
           Also check out my{" "}
-          <ChakraLink href="https://linkedin.com/in/daduam">
+          <ChakraLink
+            color={colorMode === "light" ? "brand.main" : "brand.lightAccent"}
+            href="https://linkedin.com/in/daduam"
+          >
             LinkedIn profile
           </ChakraLink>
           .
+          <br />
+          Contact me via{" "}
+          <ChakraLink
+            color={colorMode === "light" ? "brand.main" : "brand.lightAccent"}
+            href="mailto:josephampadu549@gmail.com"
+          >
+            email
+          </ChakraLink>
         </Text>
       </Box>
     </Box>
