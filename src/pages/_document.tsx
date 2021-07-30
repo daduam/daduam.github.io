@@ -6,7 +6,6 @@ import Document, {
   Main,
   NextScript,
 } from "next/document";
-
 import { GA_TRACKING_ID } from "../lib/gtag";
 import theme from "../theme";
 
@@ -21,6 +20,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <title>Joseph Ampadu, Software developer | Computer Science</title>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           {process.env.NODE_ENV == "production" && (
             <>

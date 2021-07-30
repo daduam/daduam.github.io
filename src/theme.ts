@@ -1,5 +1,5 @@
 import { extendTheme, ThemeConfig } from "@chakra-ui/react";
-import { mode } from "@chakra-ui/theme-tools";
+import { GlobalStyles, mode } from "@chakra-ui/theme-tools";
 
 const colors = {
   transparent: "transparent",
@@ -18,10 +18,10 @@ const styles = {
   global: (props: any) => ({
     body: {
       color: mode(colors.black, colors.white)(props),
-      bg: mode(colors.brand.lightShade, colors.brand.darkShade)(props),
+      bgColor: mode(colors.brand.lightShade, colors.brand.darkShade)(props),
     },
   }),
-};
+} as GlobalStyles;
 
 const config: ThemeConfig = {
   initialColorMode: "light",
